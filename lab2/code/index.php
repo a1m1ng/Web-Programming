@@ -1,12 +1,16 @@
 <?php
-/* Imagine a lot of code here */
-$very_bad_unclear_name = "15 chicken wings";
 
+$intVar = 42;
+echo $intVar;
+echo "\n";
 
-// Write your code here:
+$floatVar = 13.45;
+echo $floatVar;
+echo "\n";
 
-$order =& $very_bad_unclear_name;
-$order .= " python top";
+echo 6 + 6;  // Result: 12
+echo "\n";
 
-// Don't change the line below
-echo "\nYour order is: $very_bad_unclear_name.";
+$last_month = 1187.23;
+$this_month = 1089.98;
+echo "Разница в расходах: " . ($last_month - $this_month);
