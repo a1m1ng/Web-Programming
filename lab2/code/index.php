@@ -27,4 +27,17 @@ echo "\n";
 
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo "Разница в расходах: " . ($last_month - $this_month);
+echo "Разница в расходах: " . ($last_month - $this_month) . "\n";
+
+//Task 11
+
+$num_languages = 4;
+
+$months = 11;
+
+$days = $months * 16;
+
+$days_per_language = $days / $num_languages;
+
+echo "Среднее количество дней на изучение каждого языка: $days_per_language";
+
