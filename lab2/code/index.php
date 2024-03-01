@@ -291,3 +291,34 @@ echo "Количество элементов в массиве: " . count($arr)
 echo "Последний элемент массива: " . $arr[count($arr) - 1] . "\n";
 echo "Предпоследний элемент массива: " . $arr[count($arr) - 2] . "\n";
 
+// Task 18
+
+function is_sum_greater_than_ten($num1, $num2) {
+    return ($num1 + $num2) > 10;
+}
+
+function is_equal($num1, $num2) {
+    return $num1 === $num2;
+}
+
+$test = 0;
+if ($test == 0) echo 'верно';
+
+echo "\n";
+
+$age = 33;
+if ($age < 10 || $age > 99) {
+    echo "Число не входит в диапазон от 10 до 99.\n";
+} else {
+    $digit_sum = array_sum(str_split($age));
+    if ($digit_sum <= 9) {
+        echo "Сумма цифр однозначна: $digit_sum\n";
+    } else {
+        echo "Сумма цифр двузначна: $digit_sum\n";
+    }
+}
+
+$arr = [1, 2, 3];
+if (count($arr) == 3) {
+    echo "Сумма элементов массива: " . array_sum($arr) . "\n";
+}
