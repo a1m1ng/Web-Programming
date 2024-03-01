@@ -232,3 +232,62 @@ function sum_digits($number) {
 $num = 876;
 $result = sum_digits($num);
 echo "Странная сумма цифр числа {$num}: $result\n";
+
+// Task 17
+
+$array = [];
+for ($i = 1; $i <= 5; $i++) {
+    $array[] = str_repeat('x', $i);
+}
+echo json_encode($array);
+
+function arrayFill($value, $count) {
+    return array_fill(0, $count, $value);
+}
+
+$result = arrayFill('x', 5);
+print_r($result);
+
+
+$array = [[1, 2, 3], [4, 5], [6]];
+$sum = 0;
+foreach ($array as $sub) {
+    $sum += array_sum($sub);
+}
+echo "Сумма элементов двухмерного массива: $sum\n";
+
+$array = [];
+$num = 1;
+for ($i = 0; $i < 3; $i++) {
+    $temp_array = [];
+    for ($j = 0; $j < 3; $j++) {
+        $temp_array[] = $num;
+        $num++;
+    }
+    $array[] = $temp_array;
+}
+echo json_encode($array) . "\n";
+
+$array = [2, 5, 3, 9];
+$result = $array[0] * $array[1] + $array[2] * $array[3];
+echo "{$array[0]} * {$array[1]} + {$array[2]} * {$array[3]} = $result\n";
+
+$user = [
+    'name' => 'Alexandr',
+    'surname' => 'Smidt',
+    'patronymic' => 'Ivanovitch'
+];
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'] . "\n";
+
+$date = [
+    'year' => 5,
+    'month' => 11,
+    'day' => 1987
+];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day'] . "\n";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo "Количество элементов в массиве: " . count($arr) . "\n";
+echo "Последний элемент массива: " . $arr[count($arr) - 1] . "\n";
+echo "Предпоследний элемент массива: " . $arr[count($arr) - 2] . "\n";
+
