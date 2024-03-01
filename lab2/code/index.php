@@ -328,3 +328,23 @@ if (count($arr) == 3) {
 for ($i = 1; $i <= 20; $i++) {
     echo str_repeat('x', $i) . "\n";
 }
+
+// Task 20
+
+$array = [1, 2, 3, 4, 5];
+$average = array_sum($array) / count($array);
+echo "Среднее арифметическое массива: $average\n";
+
+$sum = array_sum(range(1, 100));
+echo "Сумма чисел от 1 до 100: $sum\n";
+
+$numbers = [4, 9, 16, 25];
+$sqarr = array_map('sqrt', $numbers);
+echo json_encode($sqarr);
+
+$alphabet = array_combine(range('a', 'z'), range(1, 26));
+echo json_encode($alphabet);
+
+$string = '1234567890';
+$sumPairs = array_sum(str_split($string, 2));
+echo "Сумма пар чисел в строке: $sumPairs\n";
