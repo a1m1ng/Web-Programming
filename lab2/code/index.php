@@ -177,4 +177,58 @@ function printStringReturnNumber() {
 $my_num = printStringReturnNumber();
 
 // Выводим результат
-echo $my_num;
+echo $my_num . "\n";
+
+// Task 16
+
+function increaseEnthusiasm($string) {
+    return $string . '!';
+}
+
+$result = increaseEnthusiasm(".");
+echo $result . "\n";
+
+function repeatThreeTimes($string) {
+    return $string . $string . $string;
+}
+
+$result = repeatThreeTimes("Пыхтон");
+echo $result . "\n";
+
+$result = increaseEnthusiasm(repeatThreeTimes("ha"));
+echo $result . "\n";
+
+function cut($string, $length = 10) {
+    return substr($string, 0, $length);
+}
+
+$result = cut("Looooooooooooooooooooonnnnnnngggggggg", 6);
+echo $result . "\n";
+
+function recursion_print($arr, $index = 0) {
+    if ($index < count($arr)) {
+        echo $arr[$index] . "\n";
+        recursion_print($arr, $index + 1);
+    }
+}
+
+$array = [1, 2, 3, 4, 5];
+echo "Рекурсия массива:\n";
+recursion_print($array);
+
+function sum_digits($number) {
+    $sum = 0;
+    while ($number > 0 || $sum > 9) {
+        if ($number == 0) {
+            $number = $sum;
+            $sum = 0;
+        }
+        $sum += $number % 10;
+        $number = (int)($number / 10);
+    }
+    return $sum;
+}
+
+$num = 876;
+$result = sum_digits($num);
+echo "Странная сумма цифр числа {$num}: $result\n";
