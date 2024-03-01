@@ -44,3 +44,21 @@ echo "Среднее количество дней на изучение каж�
 // Task 12
 
 echo 8**2;
+echo "\n";
+
+// Task 13
+$my_num = 88;
+
+$answer = $my_num;
+
+$answer += 2;
+
+$answer *= 2;
+
+$answer -= 2;
+
+$answer /= 2;
+
+$answer -= $my_num;
+
+echo $answer;  // Result: 1
