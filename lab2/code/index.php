@@ -322,3 +322,9 @@ $arr = [1, 2, 3];
 if (count($arr) == 3) {
     echo "Сумма элементов массива: " . array_sum($arr) . "\n";
 }
+
+// Task 19
+
+for ($i = 1; $i <= 20; $i++) {
+    echo str_repeat('x', $i) . "\n";
+}
