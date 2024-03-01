@@ -165,3 +165,16 @@ foreach ($array as $value) {
     }
 }
 echo "Количество первых элементов массива для суммы больше {$limit}: {$count}\n";
+
+// Task 15
+
+function printStringReturnNumber() {
+    echo "пыхтон топ из 100 на ";  // Печать строки
+    return 11_11_11;
+}
+
+// Вызываем функцию и записываем результат в переменную
+$my_num = printStringReturnNumber();
+
+// Выводим результат
+echo $my_num;
